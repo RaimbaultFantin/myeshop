@@ -1,0 +1,296 @@
+/*----------------------------------------*/
+/* font
+/*----------------------------------------*/
+
+@font-face {
+	font-family: "Helvetica 45 Light";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Helvetica 45 Light"), url("../fonts/HelveticaNeue-Light.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Helvetica 65 Medium";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Helvetica 65 Medium"), url("../fonts/HelveticaNeue-Medium.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Helvetica Neue Bold";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Helvetica Neue Bold"), url("../fonts/HelveticaNeueBold.woff") format("woff");
+}
+
+/*----------------------------------------*/
+/* END font
+/*----------------------------------------*/
+
+/*----------------------------------------*/
+/* MY CSS
+/*----------------------------------------*/
+#navbar{
+	background-color: cornsilk;
+	height: 105px;
+	top:0;
+	position: sticky;
+	z-index: 99;
+	opacity: 0.98;
+}
+
+.bottom-zero{
+	margin-bottom: 0;
+}
+
+.card{
+	border: none;
+	width: 25rem;
+}
+
+.body-card{
+	margin-top: 10px;
+	text-align: left;
+}
+
+.top-sales{
+	margin-top: 85px;
+	margin-bottom: 20px;
+	margin-left: 70px;
+	margin-right: 70px;
+	position: relative;
+}
+
+.marge-right{
+	margin-right: 30px;
+}
+
+.marge-left{
+	margin-left: 30px;
+}
+
+.bold{
+	font-weight: bold ;
+}
+
+.green{
+	background-color: #25693f;
+	border-color: rgb(37, 105, 63);
+}
+
+.radius{
+	border-radius: 20px;
+}
+
+.black{
+	background-color: rgb(24, 22, 22);
+}
+
+.options{
+	margin-top: 25px;
+}
+
+.border-right{
+	border-right: 1px solid rgba(37, 105, 63, .5);
+}
+
+.right-side{
+	margin: auto;
+	width: 60%;
+}
+
+.content{
+	margin-top: 60px;
+}
+
+.red-hover{
+	border: none;
+}
+
+.red-hover:hover{
+	background-color: #f44336c9;
+	border: #f44336c9;
+}
+
+.margin-top-bottom{
+	margin: 10px 0 10px 0;
+}
+/*----------------------------------------*/
+/* END MY CSS
+/*----------------------------------------*/
+
+/*----------------------------------------*/
+/* DEFAULD DIV
+/*----------------------------------------*/
+html{
+	height: 100%;
+}
+
+body {
+	font-family: "Helvetica 65 Medium", sans-serif;
+	width: 100%;
+	min-height: 100%;
+	margin: 0;
+
+	display: flex;
+	flex-direction: column;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	color: black;
+}
+
+h1 {
+	font-size: 70px;
+}
+
+h2 {
+	font-size: 36px;
+	color: white;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+	color: white;
+}
+
+p {
+	font-size: 16px;
+	color: #71767b;
+	line-height: 1.8;
+	font-family: "Helvetica 45 Light", sans-serif;
+}
+
+
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+	outline: none;
+}
+
+a{
+	color:black;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+	color:#f44336c9
+}
+
+ul,
+ol {
+	padding: 0;
+	margin: 0;
+}
+
+li{
+	text-decoration: none;
+	list-style: none;
+}
+
+footer {
+	margin-top: auto;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+}
+
+/*----------------------------------------*/
+/* END DEFAULD DIV
+/*----------------------------------------*/
+
+/*----------------------------------------*/
+/* CHECKBOX PRIMARY
+/*----------------------------------------*/
+
+.chck-primary {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .chck-primary input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .chck-primary:hover input ~ .checkmark {
+	background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .chck-primary input:checked ~ .checkmark {
+	background-color: #25693f;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .chck-primary input:checked ~ .checkmark:after {
+	display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .chck-primary .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+  }
+
+/*----------------------------------------*/
+/* END CHECKBOX PRIMARY
+/*----------------------------------------*/

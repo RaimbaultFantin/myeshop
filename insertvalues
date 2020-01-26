@@ -1,0 +1,18 @@
+delete from products;
+
+insert into categories(name) values ('Pantalon');
+insert into categories(name) values ('T-shirt');
+insert into family_types(name) values ('Nike');
+insert into family_types(name) values ('Adidas');
+
+insert into family_types(name) values ('édédès');
+
+insert into products(name,description,category_id,price,gender,slug,family_id) values ('Jogging Bande Blanche', 'Vêtement doux', 1, 50, 'M','jogging-bande-blanche',2);
+insert into products(name,description,category_id,price,gender,slug,family_id) values ('Jogging Bande Bleu', 'Vêtement très doux', 1, 75, 'F','jogging-bande-bleu',1);
+insert into products(name,description,category_id,price,gender,slug,family_id) values ('Jeans rare', 'Vêtement peu doux', 1, 150, 'M','jeans-rare',2);
+insert into products(name,description,category_id,price,gender,slug,family_id) values ('Jeans doré', 'Vêtement moyennement doux', 1, 185, 'M','jeans-dore',2);
+
+insert into products(name,description,category_id,price,gender,slug,family_id,size) values ('T-shirt Nike Rouge', 'Vêtement doux', 2, 25, 'M','t-shirt-nike-rouge',2,'S');
+insert into products(name,description,category_id,price,gender,slug,family_id,size) values ('T-shirt Nike Bleu', 'Vêtement doux', 2, 35, 'M','t-shirt-nike-bleu',2,'M');
+insert into products(name,description,category_id,price,gender,slug,family_id,size) values ('T-shirt Nike Vert', 'Vêtement doux', 2, 25, 'M','t-shirt-nike-vert',2,'L');
+insert into products(name,description,category_id,price,gender,slug,family_id,size) values ('T-shirt Nike Orange', 'Vêtement doux', 2, 29.99, 'M','t-shirt-nike-orange',2,'XL');
